@@ -1,0 +1,546 @@
+{
+    "134905395": {
+        "title": "Opel Astra",
+        "price": "1 350 000 ₸",
+        "year": "1994 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Шымкент",
+        "link": "https://kolesa.kz/a/show/134905395"
+    },
+    "134149412": {
+        "title": "JAC S3",
+        "price": "7 890 000 ₸",
+        "year": "2020 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134149412"
+    },
+    "134107335": {
+        "title": "Nissan Patrol",
+        "price": "4 800 000 ₸",
+        "year": "2002 г.",
+        "capacity": "3 л (дизель)",
+        "city": "Костанай",
+        "link": "https://kolesa.kz/a/show/134107335"
+    },
+    "134905182": {
+        "title": "ВАЗ (Lada) Priora 2170 (седан)",
+        "price": "1 380 000 ₸",
+        "year": "2012 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Актобе",
+        "link": "https://kolesa.kz/a/show/134905182"
+    },
+    "134905072": {
+        "title": "Daewoo Nexia",
+        "price": "2 650 000 ₸",
+        "year": "2012 г.",
+        "capacity": "1.5 л (бензин)",
+        "city": "Жетысай",
+        "link": "https://kolesa.kz/a/show/134905072"
+    },
+    "134677201": {
+        "title": "Chevrolet Aveo",
+        "price": "1 800 000 ₸",
+        "year": "2007 г.",
+        "capacity": "1.2 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134677201"
+    },
+    "127408870": {
+        "title": "Infiniti QX80",
+        "price": "22 500 000 ₸",
+        "year": "2014 г.",
+        "capacity": "5.6 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/127408870"
+    },
+    "134774518": {
+        "title": "Volkswagen Golf",
+        "price": "1 300 000 ₸",
+        "year": "1994 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134774518"
+    },
+    "130772048": {
+        "title": "Kia Sportage",
+        "price": "3 400 000 ₸",
+        "year": "2007 г.",
+        "capacity": "2 л (газ-бензин)",
+        "city": "Урджар",
+        "link": "https://kolesa.kz/a/show/130772048"
+    },
+    "134682360": {
+        "title": "ВАЗ (Lada) 21099 (седан)",
+        "price": "1 000 000 ₸",
+        "year": "2002 г.",
+        "capacity": "1.5 л (бензин)",
+        "city": "Усть-Каменогорск",
+        "link": "https://kolesa.kz/a/show/134682360"
+    },
+    "134759106": {
+        "title": "Hyundai Santa Fe",
+        "price": "25 700 000 ₸",
+        "year": "2022 г.",
+        "capacity": "3.5 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134759106"
+    },
+    "134505232": {
+        "title": "Volkswagen Passat CC",
+        "price": "5 600 000 ₸",
+        "year": "2012 г.",
+        "capacity": "1.8 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134505232"
+    },
+    "134842907": {
+        "title": "Renault Logan",
+        "price": "2 000 000 ₸",
+        "year": "2011 г.",
+        "capacity": "1.4 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134842907"
+    },
+    "134807367": {
+        "title": "Toyota RAV 4",
+        "price": "14 400 000 ₸",
+        "year": "2016 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134807367"
+    },
+    "134678740": {
+        "title": "Mercedes-Benz GLK 300",
+        "price": "10 800 000 ₸",
+        "year": "2012 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134678740"
+    },
+    "134579372": {
+        "title": "Mercedes-Benz GLE 400",
+        "price": "25 000 000 ₸",
+        "year": "2015 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134579372"
+    },
+    "134684942": {
+        "title": "Chevrolet Malibu",
+        "price": "7 300 000 ₸",
+        "year": "2014 г.",
+        "capacity": "2.4 л (газ-бензин)",
+        "city": "Уральск",
+        "link": "https://kolesa.kz/a/show/134684942"
+    },
+    "134682467": {
+        "title": "Toyota Prius",
+        "price": "3 000 000 ₸",
+        "year": "2008 г.",
+        "capacity": "1.5 л (гибрид)",
+        "city": "Семей",
+        "link": "https://kolesa.kz/a/show/134682467"
+    },
+    "134642033": {
+        "title": "Toyota Estima",
+        "price": "6 000 000 ₸",
+        "year": "2007 г.",
+        "capacity": "2.4 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134642033"
+    },
+    "133417948": {
+        "title": "Lexus GS 300",
+        "price": "6 500 000 ₸",
+        "year": "2005 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/133417948"
+    },
+    "134846078": {
+        "title": "Volkswagen Sharan",
+        "price": "1 800 000 ₸",
+        "year": "1997 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Уральск",
+        "link": "https://kolesa.kz/a/show/134846078"
+    },
+    "134730534": {
+        "title": "SsangYong Actyon",
+        "price": "6 000 000 ₸",
+        "year": "2014 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Макинск",
+        "link": "https://kolesa.kz/a/show/134730534"
+    },
+    "134905559": {
+        "title": "Toyota Ipsum",
+        "price": "4 200 000 ₸",
+        "year": "2007 г.",
+        "capacity": "2.4 л (бензин)",
+        "city": "Атырау",
+        "link": "https://kolesa.kz/a/show/134905559"
+    },
+    "134380302": {
+        "title": "Opel Astra",
+        "price": "1 550 000 ₸",
+        "year": "1993 г.",
+        "capacity": "1.8 л (бензин)",
+        "city": "Жетысай",
+        "link": "https://kolesa.kz/a/show/134380302"
+    },
+    "134731258": {
+        "title": "ВАЗ (Lada) Priora 2170 (седан)",
+        "price": "2 800 000 ₸",
+        "year": "2014 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Темиртау",
+        "link": "https://kolesa.kz/a/show/134731258"
+    },
+    "130021607": {
+        "title": "Mazda CX-5",
+        "price": "12 000 000 ₸",
+        "year": "2016 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/130021607"
+    },
+    "134565710": {
+        "title": "Toyota Estima",
+        "price": "4 700 000 ₸",
+        "year": "2012 г.",
+        "capacity": "2.4 л (гибрид)",
+        "city": "Караганда",
+        "link": "https://kolesa.kz/a/show/134565710"
+    },
+    "133841827": {
+        "title": "ГАЗ ГАЗель",
+        "price": "2 500 000 ₸",
+        "year": "2006 г.",
+        "capacity": "2.9 л (газ-бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/133841827"
+    },
+    "132359909": {
+        "title": "Toyota Land Cruiser Prado",
+        "price": "34 000 000 ₸",
+        "year": "2018 г.",
+        "capacity": "4 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/132359909"
+    },
+    "134667949": {
+        "title": "ВАЗ (Lada) 2110 (седан)",
+        "price": "1 050 000 ₸",
+        "year": "2007 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Петропавловск",
+        "link": "https://kolesa.kz/a/show/134667949"
+    },
+    "132903155": {
+        "title": "Toyota RAV 4 Elegance 2.5",
+        "price": "23 750 000 ₸",
+        "year": "2021 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/132903155"
+    },
+    "134506898": {
+        "title": "Nissan Presage",
+        "price": "5 670 000 ₸",
+        "year": "2003 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Усть-Каменогорск",
+        "link": "https://kolesa.kz/a/show/134506898"
+    },
+    "134378142": {
+        "title": "Kia Sorento",
+        "price": "7 450 000 ₸",
+        "year": "2014 г.",
+        "capacity": "2.4 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134378142"
+    },
+    "131388534": {
+        "title": "Toyota Camry",
+        "price": "10 500 000 ₸",
+        "year": "2011 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/131388534"
+    },
+    "134612860": {
+        "title": "Toyota Camry",
+        "price": "9 000 000 ₸",
+        "year": "2012 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134612860"
+    },
+    "133105451": {
+        "title": "Volvo S60",
+        "price": "3 500 000 ₸",
+        "year": "2010 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Актобе",
+        "link": "https://kolesa.kz/a/show/133105451"
+    },
+    "112539482": {
+        "title": "BMW X4",
+        "price": "25 500 000 ₸",
+        "year": "2019 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Костанай",
+        "link": "https://kolesa.kz/a/show/112539482"
+    },
+    "134831964": {
+        "title": "Toyota IQ",
+        "price": "4 950 000 ₸",
+        "year": "2010 г.",
+        "capacity": "1.3 л (бензин)",
+        "city": "Петропавловск",
+        "link": "https://kolesa.kz/a/show/134831964"
+    },
+    "134726109": {
+        "title": "Mitsubishi Space Runner",
+        "price": "900 000 ₸",
+        "year": "1992 г.",
+        "capacity": "1.8 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134726109"
+    },
+    "134836077": {
+        "title": "Infiniti FX35",
+        "price": "6 000 000 ₸",
+        "year": "2005 г.",
+        "capacity": "3.5 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134836077"
+    },
+    "134629596": {
+        "title": "Kia Optima",
+        "price": "11 600 000 ₸",
+        "year": "2018 г.",
+        "capacity": "2.4 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134629596"
+    },
+    "122995931": {
+        "title": "ГАЗ ГАЗель",
+        "price": "1 700 000 ₸",
+        "year": "1998 г.",
+        "capacity": "2.4 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/122995931"
+    },
+    "134782885": {
+        "title": "Toyota Highlander",
+        "price": "14 800 000 ₸",
+        "year": "2012 г.",
+        "capacity": "3.5 л (бензин)",
+        "city": "Семей",
+        "link": "https://kolesa.kz/a/show/134782885"
+    },
+    "134783651": {
+        "title": "Nissan Qashqai",
+        "price": "4 700 000 ₸",
+        "year": "2007 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Боралдай",
+        "link": "https://kolesa.kz/a/show/134783651"
+    },
+    "134673572": {
+        "title": "Ravon R4",
+        "price": "5 800 000 ₸",
+        "year": "2018 г.",
+        "capacity": "1.5 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134673572"
+    },
+    "127674630": {
+        "title": "Renault Sandero Stepway",
+        "price": "6 900 000 ₸",
+        "year": "2018 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Атырау",
+        "link": "https://kolesa.kz/a/show/127674630"
+    },
+    "134680028": {
+        "title": "Hyundai Sonata",
+        "price": "15 000 000 ₸",
+        "year": "2022 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134680028"
+    },
+    "132699699": {
+        "title": "SsangYong Istana",
+        "price": "1 800 000 ₸",
+        "year": "2000 г.",
+        "capacity": "2.9 л (дизель)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/132699699"
+    },
+    "130154458": {
+        "title": "Porsche Cayenne",
+        "price": "7 900 000 ₸",
+        "year": "2007 г.",
+        "capacity": "4.8 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/130154458"
+    },
+    "134240278": {
+        "title": "Mitsubishi Carisma",
+        "price": "1 650 000 ₸",
+        "year": "1997 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134240278"
+    },
+    "129016915": {
+        "title": "Volkswagen Jetta",
+        "price": "5 000 000 ₸",
+        "year": "2011 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Шымкент",
+        "link": "https://kolesa.kz/a/show/129016915"
+    },
+    "115927902": {
+        "title": "Volkswagen Jetta",
+        "price": "4 650 000 ₸",
+        "year": "2012 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Шымкент",
+        "link": "https://kolesa.kz/a/show/115927902"
+    },
+    "134625812": {
+        "title": "Nissan Cefiro",
+        "price": "1 400 000 ₸",
+        "year": "2000 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134625812"
+    },
+    "134492160": {
+        "title": "BMW X6",
+        "price": "13 500 000 ₸",
+        "year": "2013 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134492160"
+    },
+    "132659946": {
+        "title": "Mitsubishi Montero Sport",
+        "price": "3 500 000 ₸",
+        "year": "2001 г.",
+        "capacity": "3 л (газ-бензин)",
+        "city": "Актау",
+        "link": "https://kolesa.kz/a/show/132659946"
+    },
+    "134624690": {
+        "title": "Subaru Tribeca",
+        "price": "7 200 000 ₸",
+        "year": "2008 г.",
+        "capacity": "3.6 л (бензин)",
+        "city": "Актау",
+        "link": "https://kolesa.kz/a/show/134624690"
+    },
+    "134625278": {
+        "title": "ВАЗ (Lada) 2109 (хэтчбек)",
+        "price": "600 000 ₸",
+        "year": "1995 г.",
+        "capacity": "1.5 л (бензин)",
+        "city": "Усть-Каменогорск",
+        "link": "https://kolesa.kz/a/show/134625278"
+    },
+    "134557214": {
+        "title": "Volkswagen Transporter",
+        "price": "3 600 000 ₸",
+        "year": "2000 г.",
+        "capacity": "2.5 л (дизель)",
+        "city": "Кокшетау",
+        "link": "https://kolesa.kz/a/show/134557214"
+    },
+    "134829388": {
+        "title": "Toyota Camry",
+        "price": "14 600 000 ₸",
+        "year": "2019 г.",
+        "capacity": "2.5 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134829388"
+    },
+    "133016478": {
+        "title": "ВАЗ (Lada) Priora 2170 (седан)",
+        "price": "2 550 000 ₸",
+        "year": "2013 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Уральск",
+        "link": "https://kolesa.kz/a/show/133016478"
+    },
+    "134901900": {
+        "title": "Toyota Hilux",
+        "price": "7 700 000 ₸",
+        "year": "2008 г.",
+        "capacity": "2.7 л (бензин)",
+        "city": "Караганда",
+        "link": "https://kolesa.kz/a/show/134901900"
+    },
+    "133833500": {
+        "title": "ВАЗ (Lada) Kalina 1118 (седан)",
+        "price": "590 000 ₸",
+        "year": "2006 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/133833500"
+    },
+    "130366780": {
+        "title": "Hyundai Sonata",
+        "price": "9 500 000 ₸",
+        "year": "2019 г.",
+        "capacity": "2 л (газ)",
+        "city": "Шымкент",
+        "link": "https://kolesa.kz/a/show/130366780"
+    },
+    "134499535": {
+        "title": "ВАЗ (Lada) 2121 Нива",
+        "price": "4 900 000 ₸",
+        "year": "2019 г.",
+        "capacity": "1.7 л (бензин)",
+        "city": "Аксу",
+        "link": "https://kolesa.kz/a/show/134499535"
+    },
+    "134905769": {
+        "title": "BMW 520",
+        "price": "1 100 000 ₸",
+        "year": "1992 г.",
+        "capacity": "2 л (бензин)",
+        "city": "Алматы",
+        "link": "https://kolesa.kz/a/show/134905769"
+    },
+    "134794822": {
+        "title": "Toyota Alphard",
+        "price": "5 500 000 ₸",
+        "year": "2006 г.",
+        "capacity": "3 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134794822"
+    },
+    "134395228": {
+        "title": "ВАЗ (Lada) Granta 2190 (седан)",
+        "price": "1 900 000 ₸",
+        "year": "2013 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Уральск",
+        "link": "https://kolesa.kz/a/show/134395228"
+    },
+    "134615824": {
+        "title": "Kia Cerato",
+        "price": "6 800 000 ₸",
+        "year": "2014 г.",
+        "capacity": "1.6 л (бензин)",
+        "city": "Нур-Султан (Астана)",
+        "link": "https://kolesa.kz/a/show/134615824"
+    }
+}
