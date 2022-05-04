@@ -50,7 +50,9 @@ class SubscribeLog(models.Model):
 class Subscribe(models.Model):
 
     type_subscribes = [
-        ('kolesa', 'kolesa'),
+        ('kolesa_auto', 'kolesa_auto'),
+        ('kolesa_zap', 'kolesa_zap'),
+
         ('krisha', 'krisha'),
     ]
 

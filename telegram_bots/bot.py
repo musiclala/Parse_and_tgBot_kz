@@ -2,13 +2,13 @@ import asyncio
 import logging
 
 from aiogram import Bot, Dispatcher, executor, types
-from config import TOKEN
+from config import TOKEN_KOLESA
 
 import telegram_bots.postgres as postgres
 import telegram_bots.functions as functions
 
 # Объект бота
-bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
+bot = Bot(token=TOKEN_KOLESA, parse_mode=types.ParseMode.HTML)
 # Диспетчер для бота
 dp = Dispatcher(bot)
 # Включаем логирование, чтобы не пропустить важные сообщения
@@ -81,14 +81,18 @@ async def start_bot(message: types.Message):
                 if postgres.status_exists(message.from_user.id):
                     fresh_adt = functions.check_cars_update(url=url, user_id=message.from_user.id)
                     if len(fresh_adt) > 0:
+                        adt = ''
                         for k, v in fresh_adt.items():
-                            adt = f"<b>{v['title']}  {v['year']}</b>\n" \
-                                  f"Объем двигателя:  {v['capacity']}\n" \
-                                  f"Цена:  {v['price']}\n" \
-                                  f"Город:  {v['city']}\n" \
-                                  f"{v['link']}"
+                            if k == 'Название':
+                                adt += f'<b>{v}</b>\n'
+                            elif k == 'Ссылка':
+                                adt += f'{v}\n'
+                            elif not k:
+                                continue
+                            else:
+                                adt += f'{k}:  {v}\n'
 
-                            await bot.send_message(message.from_user.id, adt, disable_notification=True)
+                        await bot.send_message(message.from_user.id, adt, disable_notification=True)
                     await asyncio.sleep(time)
                 else:
                     functions.clear_cars_list(message.from_user.id)
