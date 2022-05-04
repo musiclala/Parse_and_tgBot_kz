@@ -31,32 +31,9 @@ async def start(message: types.Message):
     with open(r'photo/welcome.tgs', 'rb') as start_sticker:
         await bot.send_sticker(message.from_user.id, start_sticker)
     await message.answer(f"Привет, <b>{message.from_user.first_name}</b> ! Меня зовут <b>KolesaBot</b>\n\n"
-                         f"Я буду уведомлять тебя о новых объявлениях на сайте   Kolesa.kz !\n\n"
-                         f"Для начала давай выберем какой уровень статуса нужен именно тебе по команде:   /status ")
-
-
-# команда показывает тарифы подписки
-@dp.message_handler(commands=['status'])
-async def subscribe(message: types.Message):
-    mess = message.chat.id  # добавил чат id автоматический, а не постоянный
-    await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
-                                           f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
-                                           f"<b>ID:</b>   {message.from_user.id}\n"
-                                           f"<b>Текст:</b>   {message.text}")
-
-    with open(r'photo/standard.png', 'rb') as standard:
-        await bot.send_photo(message.from_user.id, standard)
-    with open(r'photo/bronze.png', 'rb') as bronze:
-        await bot.send_photo(message.from_user.id, bronze)
-    with open(r'photo/silver.png', 'rb') as silver:
-        await bot.send_photo(message.from_user.id, silver)
-    with open(r'photo/gold.png', 'rb') as gold:
-        await bot.send_photo(message.from_user.id, gold)
-
-    await message.answer(f"После выбора уровня статуса напиши первому освободившемуся консультанту "
-                         f"для оплаты твоего тарифа:   @bo_oq_bo\n\n"
-                         f"<b>P.S.</b>   Консультанту нужно указать номер телефона <b>KaspiGold</b>, "
-                         f"а также личный <b>Telegram ID</b>:  ' {message.from_user.id} ' ")
+                         f"Я стану твоим помощником в поиске самых свежих объявлений на сайте Kolesa.kz !\n\n"
+                         f"Чтобы начать работу давай подберем тариф именно для тебя, а также настроим фильтры! \n\n"
+                         f"Перейди в свой личный кабинет по команде: /profile ")
 
 
 # команда активации бота
@@ -135,12 +112,6 @@ async def restart_bot(message: types.Message):
 @dp.message_handler(commands=['user_id'])
 async def subscribe(message: types.Message):
     await message.answer(f"Ваш user id:\n{message.from_user.id}")
-
-
-# команда помощи настройки фильтра
-@dp.message_handler(commands=['filter'])
-async def unsubscribe(message: types.Message):
-    pass
 
 
 # обработка сообщений
