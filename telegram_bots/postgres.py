@@ -1,6 +1,5 @@
 import psycopg2
 import config
-import datetime
 
 conn = psycopg2.connect(dbname=config.NAME_DB, user=config.USERID_DB,
                         password=config.PASS_DB, host=config.HOST_DB, port=config.PORT_DB)
