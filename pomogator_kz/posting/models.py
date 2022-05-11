@@ -18,13 +18,12 @@ class Client(models.Model):
 
 
 class MessageLog(models.Model):
-    mess_log_user_id = models.ForeignKey('Client', to_field='user_id', verbose_name='id пользователя',
-                                         on_delete=models.PROTECT)
-    created_mess = models.DateTimeField(verbose_name='Дата сообщения', auto_now_add=True)
+    mess_log_user_id = models.CharField(verbose_name='id пользователя', max_length=20)
+    created_mess = models.DateTimeField(verbose_name='Дата сообщения')
     log_text = models.TextField(verbose_name='Текст сообщения')
 
     def __str__(self):
-        return self.mess_log_user_id
+        return str(self.mess_log_user_id)
 
     class Meta:
         verbose_name = 'Лог сообщения'
@@ -39,7 +38,7 @@ class SubscribeLog(models.Model):
     sub_log_type_sub = models.ForeignKey('Subscribe', verbose_name='Тип подписки', on_delete=models.PROTECT)
 
     def __str__(self):
-        return self.sub_log_user_id
+        return str(self.sub_log_user_id)
 
     class Meta:
         verbose_name = 'Лог подписки'

@@ -23,10 +23,11 @@ time = 1
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     mess = message.chat.id
+    postgres.set_write_message('/start', message.from_user.id)
     await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
-                                           f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
-                                           f"<b>ID:</b>   {message.from_user.id}\n"
-                                           f"<b>Текст:</b>   {message.text}")
+                                 f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
+                                 f"<b>ID:</b>   {message.from_user.id}\n"
+                                 f"<b>Текст:</b>   {message.text}")
 
     with open(r'photo/welcome.tgs', 'rb') as start_sticker:
         await bot.send_sticker(message.from_user.id, start_sticker)
@@ -39,13 +40,13 @@ async def start(message: types.Message):
 # команда активации бота
 @dp.message_handler(commands=['go'])
 async def start_bot(message: types.Message):
-
     url = postgres.get_url_user(message.from_user.id)
     mess = message.chat.id
+    postgres.set_write_message('/go', message.from_user.id)
     await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
-                                           f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
-                                           f"<b>ID:</b>   {message.from_user.id}\n"
-                                           f"Нажал кнопку активации ✅")
+                                 f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
+                                 f"<b>ID:</b>   {message.from_user.id}\n"
+                                 f"Нажал кнопку активации ✅")
 
     if postgres.subscriber_exists(message.from_user.id):
         if not postgres.status_exists(message.from_user.id):
@@ -85,11 +86,11 @@ async def start_bot(message: types.Message):
 @dp.message_handler(commands=['stop'])
 async def stop_bot(message: types.Message):
     mess = message.chat.id
+    postgres.set_write_message('/stop', message.from_user.id)
     await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
-                                           f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
-                                           f"<b>ID:</b>   {message.from_user.id}\n"
-                                           f"Нажал кнопку деактивации ❌")
-
+                                 f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
+                                 f"<b>ID:</b>   {message.from_user.id}\n"
+                                 f"Нажал кнопку деактивации ❌")
     if postgres.subscriber_exists(message.from_user.id):
         if postgres.status_exists(message.from_user.id):
             # если у пользователя активирован бот, отключаем его
@@ -104,6 +105,7 @@ async def stop_bot(message: types.Message):
 
 @dp.message_handler(commands=['restart'])
 async def restart_bot(message: types.Message):
+    postgres.set_write_message('/restart', message.from_user.id)
     await stop_bot(message)
     await start_bot(message)
 
@@ -111,26 +113,35 @@ async def restart_bot(message: types.Message):
 # показать user_id
 @dp.message_handler(commands=['user_id'])
 async def subscribe(message: types.Message):
-    await message.answer(f"Ваш user id:\n{message.from_user.id}")
+    mess = message.chat.id
+    postgres.set_write_message('/user_id', message.from_user.id)
+    await bot.send_message(mess, f"Ваш user id:\n{message.from_user.id}")
 
 
 # обработка сообщений
-@dp.message_handler()
-async def unsubscribe(message: types.Message):
-    mess = message.chat.id
-    await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
-                                           f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
-                                           f"<b>ID:</b>   {message.from_user.id}\n"
-                                           f"<b>Текст:</b>   {message.text}")
-
-    if message.text.startswith("https://kolesa.kz/cars/"):
-        pass
+# @dp.message_handler()
+# async def unsubscribe(message: types.Message):
+#     mess = message.chat.id
+#     await bot.send_message(mess, f"<b>Имя:</b>   {message.from_user.first_name}\n"
+#                                            f"<b>Имя пользователя:</b>   {message.from_user.username}\n"
+#                                            f"<b>ID:</b>   {message.from_user.id}\n"
+#                                            f"<b>Текст:</b>   {message.text}")
+#
+#     if message.text.startswith("https://kolesa.kz/cars/"):
+#         pass
 
 
 async def new_adt(time):
     while True:
         postgres.get_subscriptions()
         await asyncio.sleep(time)
+
+
+# обработка сообщений
+@dp.message_handler()
+async def unsubscribe(message: types.Message):
+    postgres.set_write_message(message.text, message.from_user.id)
+    # сюда сделать вывод какой-то, что такой команды нет
 
 
 # if __name__ == '__main__':

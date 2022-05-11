@@ -1,5 +1,8 @@
+import datetime
+
 import psycopg2
 import config
+from django.utils import timezone
 
 conn = psycopg2.connect(dbname=config.NAME_DB, user=config.USERID_DB,
                         password=config.PASS_DB, host=config.HOST_DB, port=config.PORT_DB)
@@ -63,7 +66,19 @@ def get_url_user(user_id):
     result.execute(f"select list_url from posting_client WHERE user_id = '{user_id}'")
     conn.commit()
     close()
-    return result.fetchall()[0][0].split(', ')
+    if type(result.fetchall()) == 'list':
+        return result.fetchall()[0][0].split(', ')
+    else:
+        return result.fetchall()
+
+
+def set_write_message(text_mess, user_id):
+    result = open()
+    result.execute(f"INSERT INTO posting_messagelog(created_mess, log_text, mess_log_user_id) "
+                   f"VALUES ('{timezone.now()}', '{text_mess}',{user_id})")
+    conn.commit()
+    close()
+    return result
 
 
 
