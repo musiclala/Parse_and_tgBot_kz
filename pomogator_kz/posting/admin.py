@@ -1,7 +1,11 @@
 from django.contrib import admin
-from .models import Client, Subscribe, SubscribeLog, MessageLog
+from .models import Client, Subscribe, \
+    SubscribeLog, MessageLog, \
+    CityFilters, RegionFilters,\
+    BrandFilters, ModelFilters, OtherDataFilters
 
 
+# Регистрация общих моделей
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
     list_display = ('id', 'user_id', 'status_bot', 'created_user')
@@ -33,3 +37,30 @@ class MessageLogAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'mess_log_user_id')
     search_fields = ('mess_log_user_id', 'log_text')
     list_filter = ('created_mess', )
+
+
+# Регистрация моделей для фильтра
+@admin.register(RegionFilters)
+class RegionFiltersAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(CityFilters)
+class CityFiltersAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(BrandFilters)
+class RegionFiltersAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(ModelFilters)
+class CityFiltersAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(OtherDataFilters)
+class OtherDataFiltersAdmin(admin.ModelAdmin):
+    pass
+

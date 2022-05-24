@@ -62,6 +62,7 @@ def update_subscription(user_id, status):
 
 
 def get_url_user(user_id):
+    """Получаем список ссылок пользователя"""
     result = open()
     result.execute(f"select list_url from posting_client WHERE user_id = '{user_id}'")
     conn.commit()
@@ -73,6 +74,7 @@ def get_url_user(user_id):
 
 
 def set_write_message(text_mess, user_id):
+    """Записываем любые сообщения в боте"""
     result = open()
     result.execute(f"INSERT INTO posting_messagelog(created_mess, log_text, mess_log_user_id) "
                    f"VALUES ('{timezone.now()}', '{text_mess}',{user_id})")
@@ -81,4 +83,78 @@ def set_write_message(text_mess, user_id):
     return result
 
 
+def add_region_to_kolesa(name_region, alias_region):
+    """Проверяем, есть ли регион в базе, если нет, то добавляем"""
+    result = open()
 
+    result.execute(f"select * from posting_regionfilters where alias_region = '{alias_region}'")
+    if bool(len(result.fetchall())):
+        close()
+        return True
+    else:
+        result.execute(f'insert into posting_regionfilters(name_region, alias_region)'
+                       f"values ('{name_region}', '{alias_region}')")
+        conn.commit()
+        close()
+        return result
+
+
+def add_city_to_kolesa(name_city, alias_city, parent_city):
+    """Проверяем, есть ли город в базе, если нет, то добавляем"""
+    result = open()
+    result.execute(f"select * from posting_cityfilters where alias_city = '{alias_city}'")
+    if bool(len(result.fetchall())):
+        close()
+        return True
+    else:
+        result.execute(f'insert into posting_cityfilters(name_city, alias_city, parent_city_id)'
+                       f"values ('{name_city}', '{alias_city}', '{parent_city}')")
+        conn.commit()
+        close()
+        return result
+
+
+def add_brand_to_kolesa(name_brand, alias_brand):
+    """Проверяем, есть ли брэнд в базе, если нет, то добавляем"""
+    result = open()
+
+    result.execute(f"select * from posting_brandfilters where alias_brand = '{alias_brand}'")
+    if bool(len(result.fetchall())):
+        close()
+        return True
+    else:
+        result.execute(f'insert into posting_brandfilters(name_brand, alias_brand)'
+                       f"values ('{name_brand}', '{alias_brand}')")
+        conn.commit()
+        close()
+        return result
+
+
+def add_model_to_kolesa(name_model, alias_model, parent_model):
+    """Проверяем, есть ли модель в базе, если нет, то добавляем"""
+    result = open()
+    result.execute(f"select * from posting_modelfilters where alias_model = '{alias_model}'")
+    if bool(len(result.fetchall())):
+        close()
+        return True
+    else:
+        result.execute(f'insert into posting_modelfilters(name_model, alias_model, parent_model_id)'
+                       f"values ('{name_model}', '{alias_model}', '{parent_model}')")
+        conn.commit()
+        close()
+        return result
+
+
+def add_other_filtres_to_kolesa(name_data, alias_data, component_data, options_data):
+    """Проверяем, есть ли другие фильтры в базе, если нет, то добавляем"""
+    result = open()
+    result.execute(f"select * from posting_otherdatafilters where alias_data = '{alias_data}'")
+    if bool(len(result.fetchall())):
+        close()
+        return True
+    else:
+        result.execute(f'insert into posting_otherdatafilters(name_data, alias_data, component_data, options_data)'
+                       f"values ('{name_data}', '{alias_data}', '{component_data}', '{options_data}')")
+        conn.commit()
+        close()
+        return result
